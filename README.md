@@ -1,4 +1,5 @@
 # 12306
+[![build](https://github.com/jaryarbn/12306/actions/workflows/maven.yml/badge.svg)](https://github.com/jaryarbn/12306/actions/workflows/maven.yml)
 ### 启动步骤
 安装 MySQL 5.7.36
 - 如果你是Windows、Linux 以及 Mac Intel 用户通过以下 Docker 命令启动 MySQL 实例：
