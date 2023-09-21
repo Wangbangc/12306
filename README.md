@@ -10,7 +10,7 @@ docker run --name mysql \
 -e MYSQL_ROOT_PASSWORD=root \
 -d mysql:5.7.36
 ```
-- 如果你是 Mac M1 用户通过以下 Docker 命令启动 MySQL 实例：
+- 如果你是 Mac M系列 用户通过以下 Docker 命令启动 MySQL 实例：
 ```
 docker run --name mysql \
 --platform=linux/amd64 \
