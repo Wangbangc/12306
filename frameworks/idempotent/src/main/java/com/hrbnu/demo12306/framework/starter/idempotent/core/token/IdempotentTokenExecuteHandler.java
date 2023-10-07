@@ -19,15 +19,15 @@ package com.hrbnu.demo12306.framework.starter.idempotent.core.token;
 
 import cn.hutool.core.util.StrUtil;
 import com.google.common.base.Strings;
+import com.hrbnu.demo12306.framework.starter.cache.DistributedCache;
+import com.hrbnu.demo12306.framework.starter.convention.errorcode.BaseErrorCode;
+import com.hrbnu.demo12306.framework.starter.idempotent.config.IdempotentProperties;
+import com.hrbnu.demo12306.framework.starter.idempotent.core.AbstractIdempotentExecuteHandler;
 import com.hrbnu.demo12306.framework.starter.idempotent.core.IdempotentParamWrapper;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.opengoofy.index12306.framework.starter.cache.DistributedCache;
-import org.opengoofy.index12306.framework.starter.convention.errorcode.BaseErrorCode;
-import org.opengoofy.index12306.framework.starter.convention.exception.ClientException;
-import com.hrbnu.demo12306.framework.starter.idempotent.config.IdempotentProperties;
-import com.hrbnu.demo12306.framework.starter.idempotent.core.AbstractIdempotentExecuteHandler;
+import com.hrbnu.demo12306.framework.starter.convention.exception.ClientException;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -37,7 +37,6 @@ import java.util.UUID;
 /**
  * 基于 Token 验证请求幂等性, 通常应用于 RestAPI 方法
  *
- * @公众号：马丁玩编程，回复：加群，添加马哥微信（备注：12306）获取项目资料
  */
 @RequiredArgsConstructor
 public final class IdempotentTokenExecuteHandler extends AbstractIdempotentExecuteHandler implements IdempotentTokenService {

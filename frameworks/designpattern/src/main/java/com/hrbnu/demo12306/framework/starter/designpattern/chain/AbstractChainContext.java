@@ -17,7 +17,7 @@
 
 package com.hrbnu.demo12306.framework.starter.designpattern.chain;
 
-import org.opengoofy.index12306.framework.starter.bases.ApplicationContextHolder;
+import com.hrbnu.demo12306.framework.starter.bases.ApplicationContextHolder;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.Ordered;
 import org.springframework.util.CollectionUtils;
@@ -32,7 +32,6 @@ import java.util.stream.Collectors;
 /**
  * 抽象责任链上下文
  *
- * @公众号：马丁玩编程，回复：加群，添加马哥微信（备注：12306）获取项目资料
  */
 public final class AbstractChainContext<T> implements CommandLineRunner {
 

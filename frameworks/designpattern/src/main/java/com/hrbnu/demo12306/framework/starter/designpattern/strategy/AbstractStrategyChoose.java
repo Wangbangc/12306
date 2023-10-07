@@ -17,9 +17,9 @@
 
 package com.hrbnu.demo12306.framework.starter.designpattern.strategy;
 
-import org.opengoofy.index12306.framework.starter.bases.ApplicationContextHolder;
-import org.opengoofy.index12306.framework.starter.bases.init.ApplicationInitializingEvent;
-import org.opengoofy.index12306.framework.starter.convention.exception.ServiceException;
+import com.hrbnu.demo12306.framework.starter.bases.ApplicationContextHolder;
+import com.hrbnu.demo12306.framework.starter.bases.init.ApplicationInitializingEvent;
+import com.hrbnu.demo12306.framework.starter.convention.exception.ServiceException;
 import org.springframework.context.ApplicationListener;
 import org.springframework.util.StringUtils;
 
@@ -31,7 +31,6 @@ import java.util.regex.Pattern;
 /**
  * 策略选择器
  *
- * @公众号：马丁玩编程，回复：加群，添加马哥微信（备注：12306）获取项目资料
  */
 public class AbstractStrategyChoose implements ApplicationListener<ApplicationInitializingEvent> {
 
