@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.opengoofy.index12306</groupId>
+        <groupId>com.hrbnu.demo12306</groupId>
         <artifactId>index12306-frameworks</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
@@ -49,7 +49,7 @@
         </dependency>
 
         <dependency>
-            <groupId>org.opengoofy.index12306</groupId>
+            <groupId>com.hrbnu.demo12306</groupId>
             <artifactId>index12306-base-spring-boot-starter</artifactId>
             <version>${project.version}</version>
         </dependency>

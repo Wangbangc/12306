@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.opengoofy.index12306</groupId>
-        <artifactId>index12306-all</artifactId>
+        <groupId>com.hrbnu.demo12306</groupId>
+        <artifactId>springboot-12306</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
