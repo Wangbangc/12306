@@ -16,25 +16,25 @@
         </dependency>
 
         <dependency>
-            <groupId>org.opengoofy.index12306</groupId>
+            <groupId>com.hrbnu.demo12306</groupId>
             <artifactId>index12306-base-spring-boot-starter</artifactId>
             <version>${project.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>org.opengoofy.index12306</groupId>
+            <groupId>com.hrbnu.demo12306</groupId>
             <artifactId>index12306-web-spring-boot-starter</artifactId>
             <version>${project.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>org.opengoofy.index12306</groupId>
+            <groupId>com.hrbnu.demo12306</groupId>
             <artifactId>index12306-cache-spring-boot-starter</artifactId>
             <version>${project.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>org.opengoofy.index12306</groupId>
+            <groupId>com.hrbnu.demo12306</groupId>
             <artifactId>index12306-convention-spring-boot-starter</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -56,7 +56,7 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>org.opengoofy.index12306</groupId>
+            <groupId>com.hrbnu.demo12306</groupId>
             <artifactId>index12306-user-spring-boot-starter</artifactId>
             <version>${project.version}</version>
         </dependency>
