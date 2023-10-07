@@ -38,7 +38,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.opengoofy.index12306</groupId>
+                <groupId>com.hrbnu.demo12306</groupId>
                 <artifactId>index12306-dependencies</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
