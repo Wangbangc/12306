@@ -54,7 +54,7 @@
 (3)接口设计：用户登入示例，通过登录，用户方可使用本软件，且我们可以根据用户存储相对于的资料等信息，接口地址为/api/user-service/v1/login，
 请求参数：
 {
-    "usernameOrMailOrPhone": "zhangsan",
+    "usernameOrMailOrPhone": "machen",
     "password": "doloreexcupidatat"
 }
 返回响应：
@@ -62,8 +62,8 @@
     "code": "0",
     "message": null,
     "data": {
-        "username": "zhangsan",
-        "realName": "张三",
+        "username": "machen",
+        "realName": "马称",
         "accessToken": "eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODU1MzEzNzYsImlzcyI6ImNvbmdvLW1hbGwiLCJzdWIiOiJ7XCJwYXNzd29yZFwiOlwiMTIzNDU2XCIsXCJ1c2VybmFtZVwiOlwibWFjaGVuXCJ9IiwiZXhwIjoxNjg1NjE3Nzc2fQ.c1lzQt5phI0EHGhZaEfITV4eogs-l-KXhRUfvZonAK6xH1EGw7uoeFVDiK5eC4O_oA864GNPb5MqsRObhNTpkg"
     },
     "requestId": null,
