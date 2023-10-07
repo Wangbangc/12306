@@ -17,7 +17,7 @@
 
 package com.hrbnu.demo12306.framework.starter.idempotent.core;
 
-import org.opengoofy.index12306.framework.starter.bases.ApplicationContextHolder;
+import com.hrbnu.demo12306.framework.starter.bases.ApplicationContextHolder;
 import com.hrbnu.demo12306.framework.starter.idempotent.core.param.IdempotentParamService;
 import com.hrbnu.demo12306.framework.starter.idempotent.core.spel.IdempotentSpELByMQExecuteHandler;
 import com.hrbnu.demo12306.framework.starter.idempotent.core.spel.IdempotentSpELByRestAPIExecuteHandler;

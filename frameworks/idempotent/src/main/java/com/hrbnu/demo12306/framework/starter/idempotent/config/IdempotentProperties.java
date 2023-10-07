@@ -18,7 +18,7 @@
 package com.hrbnu.demo12306.framework.starter.idempotent.config;
 
 import lombok.Data;
-import org.opengoofy.index12306.framework.starter.cache.config.RedisDistributedProperties;
+import com.hrbnu.demo12306.framework.starter.cache.config.RedisDistributedProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.util.concurrent.TimeUnit;

@@ -25,7 +25,7 @@ import com.hrbnu.demo12306.framework.starter.idempotent.core.IdempotentContext;
 import com.hrbnu.demo12306.framework.starter.idempotent.core.IdempotentParamWrapper;
 import lombok.RequiredArgsConstructor;
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.opengoofy.index12306.framework.starter.convention.exception.ClientException;
+import com.hrbnu.demo12306.framework.starter.convention.exception.ClientException;
 import com.hrbnu.demo12306.frameworks.starter.user.core.UserContext;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;

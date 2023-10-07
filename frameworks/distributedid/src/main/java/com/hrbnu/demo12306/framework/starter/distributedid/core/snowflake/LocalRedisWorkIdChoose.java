@@ -19,7 +19,7 @@ package com.hrbnu.demo12306.framework.starter.distributedid.core.snowflake;
 
 import cn.hutool.core.collection.CollUtil;
 import lombok.extern.slf4j.Slf4j;
-import org.opengoofy.index12306.framework.starter.bases.ApplicationContextHolder;
+import com.hrbnu.demo12306.framework.starter.bases.ApplicationContextHolder;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.redis.core.RedisTemplate;

@@ -20,7 +20,7 @@ package com.hrbnu.demo12306.framework.starter.idempotent.config;
 import com.hrbnu.demo12306.framework.starter.idempotent.core.IdempotentAspect;
 import com.hrbnu.demo12306.framework.starter.idempotent.core.token.IdempotentTokenController;
 import com.hrbnu.demo12306.framework.starter.idempotent.core.token.IdempotentTokenExecuteHandler;
-import org.opengoofy.index12306.framework.starter.cache.DistributedCache;
+import com.hrbnu.demo12306.framework.starter.cache.DistributedCache;
 import com.hrbnu.demo12306.framework.starter.idempotent.core.param.IdempotentParamExecuteHandler;
 import com.hrbnu.demo12306.framework.starter.idempotent.core.param.IdempotentParamService;
 import com.hrbnu.demo12306.framework.starter.idempotent.core.spel.IdempotentSpELByMQExecuteHandler;

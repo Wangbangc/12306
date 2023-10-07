@@ -18,8 +18,8 @@
 package com.hrbnu.demo12306.framework.starter.idempotent.core.token;
 
 import lombok.RequiredArgsConstructor;
-import org.opengoofy.index12306.framework.starter.convention.result.Result;
-import org.opengoofy.index12306.framework.starter.web.Results;
+import com.hrbnu.demo12306.framework.starter.convention.result.Result;
+import com.hrbnu.demo12306.framework.starter.web.Results;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

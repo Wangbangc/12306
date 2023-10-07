@@ -30,9 +30,9 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.opengoofy.index12306.framework.starter.bases.constant.UserConstant.REAL_NAME_KEY;
-import static org.opengoofy.index12306.framework.starter.bases.constant.UserConstant.USER_ID_KEY;
-import static org.opengoofy.index12306.framework.starter.bases.constant.UserConstant.USER_NAME_KEY;
+import static com.hrbnu.demo12306.framework.starter.bases.constant.UserConstant.REAL_NAME_KEY;
+import static com.hrbnu.demo12306.framework.starter.bases.constant.UserConstant.USER_ID_KEY;
+import static com.hrbnu.demo12306.framework.starter.bases.constant.UserConstant.USER_NAME_KEY;
 
 /**
  * JWT 工具类

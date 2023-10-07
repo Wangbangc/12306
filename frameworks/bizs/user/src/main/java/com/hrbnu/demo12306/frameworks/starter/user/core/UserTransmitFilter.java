@@ -23,7 +23,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
-import org.opengoofy.index12306.framework.starter.bases.constant.UserConstant;
+import com.hrbnu.demo12306.framework.starter.bases.constant.UserConstant;
 import org.springframework.util.StringUtils;
 
 import java.io.IOException;

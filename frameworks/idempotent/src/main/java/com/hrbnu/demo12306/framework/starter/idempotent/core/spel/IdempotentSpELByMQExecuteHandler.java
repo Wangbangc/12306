@@ -30,7 +30,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.reflect.MethodSignature;
-import org.opengoofy.index12306.framework.starter.cache.DistributedCache;
+import com.hrbnu.demo12306.framework.starter.cache.DistributedCache;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
 import java.util.concurrent.TimeUnit;
