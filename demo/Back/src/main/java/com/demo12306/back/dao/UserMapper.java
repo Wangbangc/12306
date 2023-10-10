@@ -1,6 +1,6 @@
-package com._12306.back.dao;
+package com.demo12306.back.dao;
 
-import com._12306.back.entity.User;
+import com.demo12306.back.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;

@@ -1,7 +1,7 @@
-package com._12306.back.controller;
+package com.demo12306.back.controller;
 
-import com._12306.back.common.R;
-import com._12306.back.entity.Tests;
+import com.demo12306.back.common.R;
+import com.demo12306.back.entity.Tests;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
 

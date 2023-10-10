@@ -1,4 +1,4 @@
-package com._12306.back.common;
+package com.demo12306.back.common;
 
 import lombok.Data;
 

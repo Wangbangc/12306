@@ -1,9 +1,9 @@
-package com._12306.back.controller;
+package com.demo12306.back.controller;
 
-import com._12306.back.common.R;
-import com._12306.back.entity.User;
-import com._12306.back.service.UserService;
-import com._12306.back.utils.JwtUtils;
+import com.demo12306.back.common.R;
+import com.demo12306.back.entity.User;
+import com.demo12306.back.service.UserService;
+import com.demo12306.back.utils.JwtUtils;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.commons.lang3.StringUtils;

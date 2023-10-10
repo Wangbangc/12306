@@ -1,4 +1,4 @@
-package com._12306.back.config;
+package com.demo12306.back.config;
 
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;

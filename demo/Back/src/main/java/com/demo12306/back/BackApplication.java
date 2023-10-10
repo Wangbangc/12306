@@ -1,4 +1,4 @@
-package com._12306.back;
+package com.demo12306.back;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

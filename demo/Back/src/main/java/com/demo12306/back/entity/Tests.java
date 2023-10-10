@@ -1,4 +1,4 @@
-package com._12306.back.entity;
+package com.demo12306.back.entity;
 
 import lombok.Data;
 
