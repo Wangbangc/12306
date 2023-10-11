@@ -31,6 +31,8 @@ public class UserController {
         userService.save(user);
         return R.success("添加成功");
     }
+
+
     @GetMapping("/page")
     public R<Page> page(@RequestParam Integer page,@RequestParam Integer pageSize,@RequestParam String name){
         Page pageInfo = new Page(page, pageSize);

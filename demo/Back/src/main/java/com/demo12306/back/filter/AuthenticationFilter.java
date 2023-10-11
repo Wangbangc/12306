@@ -23,7 +23,8 @@ public class AuthenticationFilter implements Filter {
         String[] urls=new String[]{
                 "/user/login",
                 "/user/logout",
-                "/swagger-ui/"
+                "/swagger-ui/*",
+                "/v3/api-docs/**"
         };
         boolean check = check(urls, requestURI);
         if (check) {
