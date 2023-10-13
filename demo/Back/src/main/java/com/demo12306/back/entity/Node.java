@@ -6,24 +6,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@TableName("user")
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class User {
+@NoArgsConstructor
+@TableName("node")
+public class Node {
     @TableId
     private Integer id;
-
-    private String username;
-
-    private String password;
-
-    private String phone;
-
-    private String city;
-
-    private Integer status;
-
-    private Boolean minister;
-
+    private String name;
 }

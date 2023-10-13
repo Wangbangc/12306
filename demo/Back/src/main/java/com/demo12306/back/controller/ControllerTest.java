@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/tt")
-@Tag(name = "用户管理")
+@Tag(name = "测试")
 public class ControllerTest {
     @GetMapping("/{id}")
     public String test(@PathVariable("id") Integer id){

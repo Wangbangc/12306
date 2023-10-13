@@ -1,4 +1,4 @@
-export let province:any = [
+let provinceStore =[
     {
         "ProID": 1,
         "name": "北京市",
@@ -203,4 +203,5 @@ export let province:any = [
         "ProSort": 34,
         "ProRemark": "特别行政区"
     }
-];
+]
+export const province:any
