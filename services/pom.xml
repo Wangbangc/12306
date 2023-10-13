@@ -12,7 +12,7 @@
     <artifactId>index12306-services</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>aggregation-service</module>
+        <module>gateway-service</module>
     </modules>
 
     <properties>

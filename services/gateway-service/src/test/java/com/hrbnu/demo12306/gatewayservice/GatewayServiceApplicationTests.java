@@ -15,20 +15,15 @@
  * limitations under the License.
  */
 
-package org.opengoofy.index12306.biz.gatewayservice.config;
+package com.hrbnu.demo12306.gatewayservice;
 
-import lombok.Data;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.List;
+@SpringBootTest
+class GatewayServiceApplicationTests {
 
-/**
- * 过滤器配置
- */
-@Data
-public class Config {
-
-    /**
-     * 黑名单前置路径
-     */
-    private List<String> blackPathPre;
+    @Test
+    void contextLoads() {
+    }
 }
