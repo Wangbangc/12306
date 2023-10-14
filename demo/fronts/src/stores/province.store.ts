@@ -1,4 +1,4 @@
-let provinceStore =[
+const provinceStore =[
     {
         "ProID": 1,
         "name": "北京市",
@@ -204,4 +204,4 @@ let provinceStore =[
         "ProRemark": "特别行政区"
     }
 ]
-export const province:any
+export const province:any=JSON.parse(JSON.stringify(provinceStore));

@@ -5,11 +5,11 @@
 
     <div class="p" style="width: 400px;height: 600px; border: whitesmoke solid 2px">
       <div style="display: flex;justify-content: space-around;width: 380px">
-        <el-select v-model="pname" class="m-2" placeholder="请选择">
+        <el-select v-model="pname" value-key="ProID" class="m-2" placeholder="请选择">
           <el-option
               v-for="item in province"
-              :key="item.ProID"
               :label="item.name"
+              :key="item.ProID"
               :value="item"
           />
         </el-select>
