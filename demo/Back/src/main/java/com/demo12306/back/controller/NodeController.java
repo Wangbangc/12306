@@ -30,9 +30,14 @@ public class NodeController {
         List<Node> list = nodeService.list();
         return R.success(list);
     }
-    @DeleteMapping
-    public R<String> drop(@RequestBody Node node){
-
-        return null;
+    @DeleteMapping("/{id}")
+    public R<String> drop(@PathVariable Integer id){
+        LambdaQueryWrapper<Node> qw = new LambdaQueryWrapper<>();
+        qw.eq(Node::getId,id);
+        if(nodeService.remove(qw)){
+            return R.success("删除成功");
+        }
+        return R.error("删除失败");
     }
+
 }

@@ -19,7 +19,7 @@
         <div class="l">
           已有站点城市:
           <span v-for="item in data" key="item.id" style="display: flex; justify-content: space-around;width: 200px">
-            {{ item.name }}<el-button round >删除</el-button>
+            {{ item.name }}<el-button round @click="deleteItem(item.id)" >删除</el-button>
           </span>
         </div>
       </el-card>
@@ -31,7 +31,8 @@ import * as echarts from "echarts"
 import {mapData} from "@/assets/mapData"
 import {onMounted, ref} from "vue";
 import {province} from "@/stores/province.store";
-import {addNode, query} from "@/apis/node";
+import {addNode, deleteId, query} from "@/apis/node";
+import {ElMessage} from "element-plus";
 
 interface Province {
   ProID: number,
@@ -44,7 +45,11 @@ interface Node {
   id: number,
   name: string
 }
-
+const deleteItem=async (id:number)=>{
+  const rq=await deleteId({id})
+  ElMessage.success(rq.data.data)
+  getNode()
+}
 const pname = ref<Province>()
 const demoh = ref(null)
 const data = ref<Node[]>([])
@@ -57,11 +62,11 @@ const add = async () => {
     id: pname.value?.ProID,
     name: pname.value?.name
   }
-  addNode(result)
-  const res = await query()
-  console.log(res.data.data)
+  const rq=await addNode(result)
+  ElMessage.success(rq.data.data)
   getNode()
 }
+
 onMounted(() => {
   console.log(demoh.value)
   console.log(province)

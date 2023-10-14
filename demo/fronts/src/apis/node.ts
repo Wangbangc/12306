@@ -12,3 +12,10 @@ export const query=()=>{
         method:'get'
     })
 }
+export const deleteId=(data:{id:number})=>{
+    const id:number=data.id
+    return $http({
+        url:`/node/${id}`,
+        method:'delete',
+    })
+}
