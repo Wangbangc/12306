@@ -6,3 +6,10 @@ export const getUserListApi = (params: { page: number;pageSize: number;name:stri
       params
   })
 }
+export const modifyStatus=(id:number[])=>{
+    return $http({
+        url:'/user/status',
+        method:'put',
+        data:id
+    })
+}

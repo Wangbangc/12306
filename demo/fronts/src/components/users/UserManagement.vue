@@ -7,14 +7,16 @@
     <el-card>
       <div class="header">
         <div class="mt-4">
-          <el-input v-model="keyword" placeholder="请输入" class="input-with-select">
+          <el-input v-model="keyword" placeholder="请输入" class="input-with-select" style="margin-right: 10px">
             <template #append>
               <el-button :icon="Search" @click="handerSearch"/>
             </template>
           </el-input>
+          <el-button type="danger" size="default" @click="disableUsers">批量改变</el-button>
         </div>
       </div>
-      <el-table :data="tableData" style="width: 100%">
+      <el-table :data="tableData" style="width: 100%" @selection-change="handleChange">
+        <el-table-column type="selection" width="55" />
         <el-table-column prop="id" label="id" width="90"></el-table-column>
         <el-table-column prop="username" label="username" width="150"></el-table-column>
         <el-table-column prop="password" label="password" width="150"></el-table-column>
@@ -23,7 +25,7 @@
         <el-table-column label="status" width="80">
           <template #default="scope">
             <div style="display: flex; align-items: center;justify-content: center">
-              <el-switch v-model="scope.row.status"/>
+              <el-switch v-model="scope.row.status" @change="userStatus([scope.row.id])"/>
             </div>
           </template>
         </el-table-column>
@@ -50,7 +52,9 @@
 import {ArrowRight, Search} from '@element-plus/icons-vue'
 import {Timer} from '@element-plus/icons-vue'
 import {ref} from "vue";
-import {getUserListApi} from "@/apis/users";
+import {getUserListApi, modifyStatus} from "@/apis/users";
+import {ElMessage} from "element-plus";
+const selectedUsers=ref<User[]>([])
 const total = ref<number>(0)
 const query = ref({
   page: 1,
@@ -67,6 +71,20 @@ interface User {
   city: string;
   status: boolean;
   minister: string;
+}
+const userStatus= async (id:number)=>{
+  const res=await modifyStatus(id)
+  ElMessage.success(res.data.data)
+  getUserList()
+}
+const handleChange=(val:User[])=>{
+  selectedUsers.value=val;
+}
+const disableUsers=async ()=>{
+  const ids=selectedUsers.value.map((user)=>user.id)
+  const res=await modifyStatus(ids)
+  ElMessage.success(res.data.data)
+  getUserList()
 }
 const handerSearch = () => {
   typeof keyword.value === "string" ? query.value.name = keyword.value : query.value.name = '';

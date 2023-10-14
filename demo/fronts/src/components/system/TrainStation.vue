@@ -29,7 +29,7 @@
 <script setup lang="ts">
 import * as echarts from "echarts"
 import {mapData} from "@/assets/mapData"
-import {onMounted, ref} from "vue";
+import {computed, onMounted, ref, watch} from "vue";
 import {province} from "@/stores/province.store";
 import {addNode, deleteId, query} from "@/apis/node";
 import {ElMessage} from "element-plus";
@@ -50,6 +50,10 @@ const deleteItem=async (id:number)=>{
   ElMessage.success(rq.data.data)
   getNode()
 }
+const ret=computed(()=>{
+
+  return data;
+})
 const pname = ref<Province>()
 const demoh = ref(null)
 const data = ref<Node[]>([])

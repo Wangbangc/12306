@@ -1,5 +1,6 @@
 package com.demo12306.back.controller;
 
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.demo12306.back.common.R;
 import com.demo12306.back.entity.User;
 import com.demo12306.back.service.UserService;
@@ -9,6 +10,9 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping("/user")
@@ -31,7 +35,13 @@ public class UserController {
         userService.save(user);
         return R.success("添加成功");
     }
-
+    @PutMapping("/status")
+    public R<String> status(@RequestBody ArrayList<Integer> integers){
+        LambdaUpdateWrapper<User> uw = new LambdaUpdateWrapper<User>();
+        uw.setSql("status=status^1").in(User::getId,integers);
+        userService.update(uw);
+        return R.success("修改成功");
+    }
 
     @GetMapping("/page")
     public R<Page> page(@RequestParam Integer page,@RequestParam Integer pageSize,@RequestParam String name){
