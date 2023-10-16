@@ -17,6 +17,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.sql.Timestamp;
+import java.util.Map;
+import java.util.Set;
 
 @SpringBootTest
 class BackApplicationTests {
@@ -34,10 +36,18 @@ class BackApplicationTests {
     RailNodeService railNodeService;
     @Autowired
     NodeService nodeService;
+    @Autowired
+    RailNodeMapper railNodeMapper;
     @Test
     void contextLoads() {
-        System.out.println(nodeService.save(new Node(1, "test")));
-        /*System.out.println(userMapper.selectByName("root"));*/
+        /*Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        railNodeService.save(new RailNode(1,timestamp,1,timestamp,2));
+        railNodeService.save(new RailNode(2,timestamp,1,timestamp,8));
+        railNodeService.save(new RailNode(1,timestamp,2,timestamp,10));
+        railNodeService.save(new RailNode(3,timestamp,5,timestamp,12));
+        railNodeService.save(new RailNode(3,timestamp,8,timestamp,2));*/
+        System.out.println(railNodeService.selectGroupById());
+
     }
     @Test
     void MybatisPlusGenerate(){
