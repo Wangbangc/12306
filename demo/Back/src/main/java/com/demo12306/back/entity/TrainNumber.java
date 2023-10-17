@@ -12,7 +12,6 @@ import java.util.List;
 @AllArgsConstructor
 public class TrainNumber {
     private Integer number;
-    private String name;
     private List<RailNode> routes;
 
 }

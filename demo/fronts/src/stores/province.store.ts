@@ -1,4 +1,4 @@
-const provinceStore =[
+let provinceStore =[
     {
         "ProID": 1,
         "name": "北京市",
